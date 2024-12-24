@@ -1,0 +1,12 @@
+# Use Python base image
+   FROM python:3.12.3-slim
+
+   # Set the working directory
+   WORKDIR /app
+
+   # Copy application code
+   COPY simple.py /app/
+
+   
+   # Run the Flask application
+   CMD ["python", "simple.py"]
